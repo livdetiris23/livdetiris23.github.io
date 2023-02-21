@@ -1,1 +1,2 @@
-# livdetiris23.github.io
+# livdet23.github.io
+Website for LivDet '23 Competition
