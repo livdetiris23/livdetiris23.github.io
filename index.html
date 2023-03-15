@@ -92,6 +92,7 @@
                             A summary of all previous LivDet-Iris competitions is available as a <a href="https://link.springer.com/book/10.1007/978-981-19-5288-3?sap-outbound-id=17EA8ADF63F2C3831CD0D8AF507B255A155FD152">
                                 Chapter 7 in new Handbook of Biometric Anti-Spoofing</a>, and <a href="https://www.cse.msu.edu/~rossarun/pubs/DasLivDetIris_IJCB2020.pdf">this IJCB 2020 paper</a> presents the most recent 
                                 LivDet-Iris 2020 competition. 
+                        </p>
                     </div>
                 </div>
             </div>
@@ -104,7 +105,7 @@
                         <h2 class="text-white mb-4">Important dates</h2>
                             <p class="text-white-50">
                                 <ul class="text-white-50">
-                                    <li><b class="text-white">March 15, 2023</b>: Data is released to participants.</li>
+                                    <li><b class="text-white">March 15, 2023</b>: Data ready to be shared with participants. [DONE]</li>
                                     <li><b class="text-white">April 15, 2023</b>: Participants deadline for submissions: self-evaluation results for Part 1, software submissions for Part 2, or delivery of systems for Part 3.</li>
                                     <li><b class="text-white">May 1, 2023</b>: Winners announced; the best teams invited to co-author the IJCB paper submission.</li>
                                     <li><b class="text-white">May 15, 2023</b>: Human examination and baseline results ready; paper summarizing the competition submitted to IJCB.</li>   
@@ -120,21 +121,70 @@
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8">
                         <h2 class="text-white mb-4">How to participate</h2>
-                        <p class="text-white-50">
-                        <b class="text-white">To participate in Part 1 -- "Algorithms-Self-Tested":</b><br> Execute the data sharing license agreement (link will be provided by March 15) and send it to the organizers (livdetiris23@gmail.com)
-                        to get copies of: (a) small "train" dataset with correct labels (spoof/live) presenting the format and nature of the test data; and (b) the actual "test" data, without ground truth labels. You will be asked 
-                        to provide your PAD scores in the range of [0,100] for all of the test samples, where "100" is the maximum degree of liveness, and "0" means that the image is fake. If the image cannot be processed, -1000 should be placed as the PAD score. The CSV file with the scores need to be sent by April 15 to <a href="mailto:livdetiris23@gmail.com">livdetiris23@gmail.com</a>
-                        to be considered in the competition. <strong>Important:</strong> the "test" data CANNOT be used in any way for training your algorithms. We trust in your fair evaluation. You can use any publicly-available datasets for training, 
-                        for instance the benchmarks from previous LivDet-Iris competitions, or <a href="https://cvrl.nd.edu/projects/data/">datasets offered by the University of Notre Dame</a>.<br><br>
 
-                        <b class="text-white">To participate in Part 2 -- "Algorithms-Independently-Tested":</b><br> Share your software algorithms as Windows console applications with <a href="mailto:livdetiris23@gmail.com">livdetiris23@gmail.com</a> by April 15. Optionally,
-                        if you find it useful, you can get a copy of "train" and "test" data from Part 1. The LivDet-Iris team will process the executable application file on the sequestered datasets of similar nature 
-                        (however with possibly different attack types) as the data offered in Part 1. <strong>Important:</strong> the "test" data offered in Part 1 CANNOT be used in any way for training your algorithms.<br><br>
+                        <div class="text-white-50">
+                        <b class="text-white">To participate in Part 1 -- "Algorithms-Self-Tested":</b><br><br>
+                        <b class="text-white-50">1. Obtain the self-evaluation package with the data</b>
+                        <ul class="text-white-50">
+                            <li>Execute <a href="https://github.com/livdetiris23/livdetiris23.github.io/blob/1194ffc1cbf591d2a63828c307549ba4a7abef30/LivDet-Iris-2023-Data-License-Agreements.zip">these two data sharing license agreements</a> 
+                                and send them to the organizers (livdetiris23@gmail.com)</li>
+                            <li>You will receive the details how to download the data package, which includes a small "train" dataset with correct labels (spoof/live) 
+                                presenting the format and nature of the test data, and the actual "test" data, without ground truth labels, to be used in self-evaluation. 
+                                This package will also include a short "readme" with instructions.</li>
+                        </ul>
                         
-                        <b class="text-white">To participate in Part 3 -- "Systems":</b><br> You will need to have your iris recognition system submitted to Clarkson University, NY, USA. Please contact us at your earliest convenience at
-                        <a href="mailto:livdetiris23@gmail.com">livdetiris23@gmail.com</a> to arrange the logistics of this testing.
+                        <b class="text-white-50">2. Generate self-evaluation PAD scores</b>
+                        <ul class="text-white-50">
+                            <li>Generate iris presentation attack detection (PAD) scores in the range of [0,100] for all of the “test” samples, where "100" 
+                                is the maximum degree of liveness, and "0" means that the image is fake.</li>
+                            <li>Construct the CSV file with two columns, “filename” and “score”, and put your PAD scores to this CSV. If the image cannot be processed, 
+                                -1000 should be used as your PAD score.</li>
+                        </ul>
+                        
+                        <b class="text-white-50">3. Submit your CSV by April 15 (End of Day, Anywhere on Earth) to livdetiris23@gmail.com</b> Provide the following data (in the email) with your submission:
+                        <ul class="text-white-50">
+                            <li>Submitter name: ____</li>
+                            <li>Affiliation: ____</li>
+                            <li>Email address: ____</li>
+                            <li>Phone number: ____</li>
+                            <li> Mailing address: ____</li>
+                            <li>Acronym or short name of the team / solution: ____ (if you want to stay anonymous in the competition and all resulting publications, say “Anonymous”)</li>
+                        </ul>
+                        
+                        You will obtain the reception confirmation, or request to correct / amend the submission, if anything is incorrect. 
+                        You are encouraged to submit early to let us screen your submission for potential errors.
+                        
+                        <br><br>
+                        <b class="text-white-50">Note 1:</b> the "test" data CANNOT be used in any way for training your algorithms. We trust in your fair evaluation. You can use any publicly-available datasets for training, 
+                        for instance the benchmarks from previous LivDet-Iris competitions, or <a href="https://cvrl.nd.edu/projects/data/">datasets offered by the University of Notre Dame</a>.
 
-                        </p>
+                        <br><br>
+                        <b class="text-white-50">Note 2:</b> Metrics recommended by ISO/IEC 30107-1:2016 will be used to assess all submissions: APCER at various levels of BPCER for the research paper, and average of APCER and BPCER to select the LivDet-Iris-2023 Part 1 
+                        winner (the 50.0 threshold will be used to calculate APCER and BPCER error rates in this case).
+                        
+
+                        <br><br><br>
+                        <b class="text-white">To participate in Part 2 -- "Algorithms-Independently-Tested":</b><br><br> 
+                        Follow <a href="https://github.com/livdetiris23/livdetiris23.github.io/blob/6b4094bfab0605daa9ac0fec87c86b7d70c11ff9/Submission-Instructions-LivDet-Iris-2023-Part2.pdf">
+                        these instructions</a> to submit your executables by April 15 (End of Day, Anywhere on Earth). Provide the following data (in the email) with your submission:
+                        <ul class="text-white-50">
+                                <li>Submitter name: ____</li>
+                                <li>Affiliation: ____</li>
+                                <li>Email address: ____</li>
+                                <li>Phone number: ____</li>
+                                <li> Mailing address: ____</li>
+                                <li>Acronym or short name of the team / solution: ____ (if you want to stay anonymous in the competition and all resulting publications, say “Anonymous”)</li>
+                        </ul>
+                        Optionally, if you find it useful, you can request a copy of "train" and "test" data from Part 1 (see above how). The LivDet-Iris team will process the executable application file on the sequestered datasets of similar nature 
+                        (however with possibly different attack types) as the data offered in Part 1. <strong>Important:</strong> the "test" data offered in Part 1 CANNOT be used in any way for training your algorithms.
+                       
+
+                        <br><br><br>
+                        <b class="text-white">To participate in Part 3 -- "Systems":</b><br><br> You will need to have your iris recognition system submitted to Clarkson University, NY, USA. Please contact us at your earliest convenience at
+                        <a href="mailto:livdetiris23@gmail.com">livdetiris23@gmail.com</a> to arrange the logistics of this testing.
+                        <p></p>
+                        </div>
+                
                     </div>
                 </div>
             </div>
@@ -150,7 +200,8 @@
                         For Parts 1 and 2 the 50.0 threshold will be used to calculate APCER and BPCER error rates. <br><br>
 
                         <b class="text-white">IJCB Paper Submission:</b> At least all winners (from all categories) will be invited to co-author the IJCB paper submission. 
-                        Depending on the number and quality of submissions (e.g., when the performance between the winners and runner-ups is small), we will consider extending this invitation to the authors of other well-performing algorithms and systems.
+                        Depending on the number and quality of submissions (e.g., when the performance between the winners and runner-ups is small), we will extend this invitation to the authors of other well-performing algorithms and systems, 
+                        to make the resulting paper useful for the community and the participants.
                         </p>
                     </div>
                 </div>
@@ -175,7 +226,7 @@
                     <a href="https://www.linkedin.com/in/sandip-purnapatra-13a59479/">Sandip Purnapatra</a><br> 
                     <a href="https://www.linkedin.com/in/ssingh05/?originalSubdomain=in">Surendra Singh</a><br> 
                     <a href=https://sites.clarkson.edu/avhbac/members/">Naveenkumar Venkataswamy</a>
-                </p>
+                    </p>
                 </div>
             </div>
         </div>
