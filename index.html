@@ -43,7 +43,7 @@
                 <div class="d-flex justify-content-center">
                     <div class="text-center">
                         <h3 class="mx-auto my-0 text-uppercase text-white">Liveness Detection Competition – Iris (LivDet-Iris 2023)</h3>
-                        <p class="text-white mx-auto mt-2 mb-5">LivDet-Iris 2023 will be the fifth competition in the LivDet-Iris series offering (a) independent assessment of current state of the art in iris Presentation Attack Detection algorithms and (b) an evaluation protocol, including publicly available datasets of spoof and live iris images, that can be followed by researchers after the competition is closed and compare their solutions with LivDet-Iris winners and baselines.</p>
+                        <p class="text-white mx-auto mt-2 mb-5">LivDet-Iris 2023 was the fifth competition in the LivDet-Iris series offering (a) independent assessment of current state of the art in iris Presentation Attack Detection algorithms and (b) an evaluation protocol, including publicly available datasets of spoof and live iris images, that can be followed by researchers after the competition is closed and compare their solutions with LivDet-Iris winners and baselines.</p>
                         
                         <h3 class="mx-auto my-0 text-uppercase text-white">Important Dates</h3>
                         <p class="text-white mx-auto mt-2 mb-5">
@@ -74,20 +74,20 @@
                             including datasets of spoof and live iris images, that can be followed by researchers after the competition is 
                             closed and compare their solutions with LivDet-Iris winners and baselines. LivDet-Iris 2023 has been included in official <a href="https://ijcb2023.ieee-biometrics.org/competitions/">IJCB 2023 competition list</a>. 
                             <br><br>
-                            This competition will have <b class="text-white">three parts</b>: 
+                            This competition had <b class="text-white">three parts</b>: 
                             <br><br>
-                            <b class="text-white">Part 1: "Algorithms-Self-Tested"</b> will involve the self-evaluation (that is, done by competitors on the sequestered and never-published-before test dataset) 
-                                incorporating a large number of ISO-compliant live and fake samples. Samples will include irises synthesized by modern Generative Adversarial Networks-based models 
+                            <b class="text-white">Part 1: "Algorithms-Self-Tested"</b> involved the self-evaluation (that is, done by competitors on the sequestered and never-published-before test dataset) 
+                                incorporating a large number of ISO-compliant live and fake samples. Samples included irises synthesized by modern Generative Adversarial Networks-based models 
                                 (StyleGAN2 and StyleGAN3) and near-infrared pictures of various artefacts simulating physical iris presentation attacks.
                             <br><br>
-                            <b class="text-white">Part 2: "Algorithms-Independently-Tested"</b> will involve the evaluation of the software solutions submitted by the competitors and 
+                            <b class="text-white">Part 2: "Algorithms-Independently-Tested"</b> involved the evaluation of the software solutions submitted by the competitors and 
                                 performed by the organizers on a sequestered dataset similar in terms of attack types to the one used in Part 1.
                             <br><br>
-                            <b class="text-white">Part 3: "Systems"</b> will involve the systematic testing of submitted iris recognition systems based on physical artifacts presented to the sensors.
+                            <b class="text-white">Part 3: "Systems"</b> involved the systematic testing of submitted iris recognition systems based on physical artifacts presented to the sensors.
                             
                             <br><br>
-                            Competitors can participate in one, two or all parts. For each part a separate winner demonstrating the best performance will be announced. 
-                            Metrics recommended by ISO/IEC 30107-1:2016 will be used to assess the submissions.
+                            Competitors can participate in one, two or all parts. For each part a separate winner demonstrating the best performance was planned to be announced. 
+                            Metrics recommended by ISO/IEC 30107-1:2016 have been used to assess the submissions.
                             <br><br>
                             A summary of all previous LivDet-Iris competitions is available as a <a href="https://link.springer.com/book/10.1007/978-981-19-5288-3?sap-outbound-id=17EA8ADF63F2C3831CD0D8AF507B255A155FD152">
                                 Chapter 7 in new Handbook of Biometric Anti-Spoofing</a>, and <a href="https://www.cse.msu.edu/~rossarun/pubs/DasLivDetIris_IJCB2020.pdf">this IJCB 2020 paper</a> presents the most recent 
@@ -194,7 +194,7 @@
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8">
-                        <h2 class="text-white mb-4">Winners and IJCB Paper Submission</h2>
+                        <h2 class="text-white mb-4">Winners and IJCB 2023 Summary Paper</h2>
                         <p class="text-white-50">
                             <b class="text-white">Winners:</b> Each Part (1, 2 and 3) will have its separate winner. Metrics recommended by ISO/IEC 30107-1:2016 will be used to assess the submissions. 
                             For Parts 1 and 2 the 50.0 threshold will be used to calculate APCER and BPCER error rates.
@@ -203,21 +203,21 @@
                             
                             <b class="text-white h3 fst-italic">Competition Results - Part 1</b>
                             <br>
-                            The results of the competition are as follows:
-                            <br>
-                            In first place was team <span class="text-white">BUCEA</span>, with a best ACER of <span class="text-white">0.071</span>. 
-                            <br>
-                            In second place was team <span class="text-white">Fraunhofer IGD</span>, with a best ACER of <span class="text-white">0.209</span>.
-                            <br>
-                            In third place was team <span class="text-white">HDA/IDVisionCenter</span>, with a best ACER of <span class="text-white">0.260</span>.
-                            <br>
-                            The full breakdown of the competition results will be available in the IJCB paper described below.
-                                                        
+                            Since we chose two different ways of calculating the Attack Presentation Classification Error Rate (APCER), 
+                            either as a weighted average or non-weighted average (where weights are proportional to the number of samples), 
+                            we decided to announce two winners, depending on the calculation method:
                             <br><br>
-    
-                            <b class="text-white" >IJCB Paper Submission:</b> At least all winners (from all categories) will be invited to co-author the IJCB paper submission. 
-                            Depending on the number and quality of submissions (e.g., when the performance between the winners and runner-ups is small), we will extend this invitation to the authors of other well-performing algorithms and systems, 
-                        to make the resulting paper useful for the community and the participants.
+                            -- The <span class="text-white">Beijing University of Civil Engineering and Architecture (BUCEA)</span> team wins when APCER is not weighted 
+                            by the number of samples with the Average Classification Error Rate (ACER) equal to <span class="text-white">22.15%</span>.
+                            <br><br>
+                            -- When weighted APCER is calculated, the <span class="text-white">Fraunhofer IGD</span> team wins with ACER = <span class="text-white">37.31%</span>.
+                            <br><br>
+                            The full breakdown of the competition results is available in the <b class="text-white" >IJCB 2023 paper (ArXiv preprint: <a href="https://arxiv.org/abs/2310.04541">https://arxiv.org/abs/2310.04541</a>).</span>
+
+                            <br><br>
+                            <b class="text-white h3 fst-italic">Competition Results - Parts 2 and 3</b>
+                            <br>There were no submissions to Parts 2 and 3 in this edition of LivDet-Iris.
+                            
                         </p>
                     </div>
                 </div>
